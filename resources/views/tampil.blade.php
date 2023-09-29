@@ -10,6 +10,8 @@
                 <th scope="col">NIS</th>
                 <th scope="col">Nama</th>
                 <th scope="col">Alamat</th>
+                <th scope="col">Sekolah</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +21,7 @@
                     <td>{{ $item->nis }}</td>
                     <td>{{ $item->nama }}</td>
                     <td>{{ $item->alamat }}</td>
+                    <td>{{ $item->sekolah->namasekolah }}</td>
                     <td class="d-flex">
                         {{-- <a href="{{ url('siswa/' . $item->id . '/edit') }}" class="btn btn-warning">Edit</a> --}}
                         <a href="{{ route('siswa.edit', $item->id) }}" class="btn btn-warning mr-2">Edit</a>
